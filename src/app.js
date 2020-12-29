@@ -1,9 +1,15 @@
 import Vue from "vue";
 
-export default function createApp(App) {
+import { createStore } from "@/store";
+
+export function createApp(App, state) {
+  const store = createStore(state);
+
   const app = new Vue({
+    store,
+
     render: h => h(App)
   });
 
-  return { app };
+  return { app, store };
 }
