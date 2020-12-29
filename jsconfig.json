@@ -1,18 +1,17 @@
 {
-  "include": ["./src/**/*"],
+  "include": ["src/**/*"],
   "exclude": ["node_modules", "dist"],
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
     },
-    "target": "es2018",
+    "target": "es2020",
+    "lib": ["dom", "es2020"],
     "allowSyntheticDefaultImports": true,
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "strictPropertyInitialization": true
+    "esModuleInterop": true
   },
   "typeAcquisition": {
     "exclude": [
