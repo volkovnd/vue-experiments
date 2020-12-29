@@ -1,0 +1,20 @@
+{
+  "name": "@volkovnd/vue-experiments",
+  "version": "0.1.0",
+  "main": "index.js",
+  "repository": "https://github.com/volkovnd/vue-experiments.git",
+  "author": "Volkov Nikolay <volkovnd@yandex.ru>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "vue": "^2.6.12"
+  },
+  "devDependencies": {
+    "@vue/cli-service": "^4.5.9",
+    "vue-template-compiler": "^2.6.12"
+  }
+}
