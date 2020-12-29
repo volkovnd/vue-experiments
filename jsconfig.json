@@ -1,0 +1,13 @@
+{
+  "include": ["./src/**/*"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "target": "es2019"
+  },
+  "typeAcquisition": {
+    "exclude": ["dotenv", "html-entities", "source-map"]
+  }
+}
