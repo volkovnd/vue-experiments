@@ -8,6 +8,12 @@
     "target": "es2019"
   },
   "typeAcquisition": {
-    "exclude": ["dotenv", "html-entities", "source-map"]
+    "exclude": [
+      "dotenv",
+      "html-entities",
+      "source-map",
+      "mdast-util-from-markdown",
+      "mdast-util-to-markdown"
+    ]
   }
 }
