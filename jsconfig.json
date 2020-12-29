@@ -1,0 +1,25 @@
+{
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "target": "es2020",
+    "lib": ["dom", "es2020"],
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true
+  },
+  "typeAcquisition": {
+    "exclude": [
+      "dotenv",
+      "html-entities",
+      "source-map",
+      "mdast-util-from-markdown",
+      "mdast-util-to-markdown"
+    ]
+  }
+}
