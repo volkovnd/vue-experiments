@@ -2,8 +2,8 @@ import Vue from "vue";
 
 import { createStore } from "@/store";
 
-export function createApp(App, state) {
-  const store = createStore(state);
+export function createApp(App) {
+  const store = createStore();
 
   const app = new Vue({
     store,
