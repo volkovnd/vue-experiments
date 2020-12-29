@@ -1,20 +1,22 @@
 {
   "name": "@volkovnd/vue-experiments",
   "version": "0.1.0",
-  "main": "index.js",
-  "repository": "https://github.com/volkovnd/vue-experiments.git",
-  "author": "Volkov Nikolay <volkovnd@yandex.ru>",
-  "license": "MIT",
   "private": true,
+  "author": "Volkov Nikolay <volkovnd@yandex.ru>",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build"
   },
+  "main": "index.js",
   "dependencies": {
+    "core-js": "^3.6.5",
     "vue": "^2.6.12"
   },
   "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.5.9",
     "@vue/cli-service": "^4.5.9",
     "vue-template-compiler": "^2.6.12"
-  }
+  },
+  "license": "MIT",
+  "repository": "https://github.com/volkovnd/vue-experiments.git"
 }
