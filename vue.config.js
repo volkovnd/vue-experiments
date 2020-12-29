@@ -3,6 +3,8 @@ module.exports = {
   lintOnSave: false,
   productionSourceMap: false,
 
+  publicPath: process.env.NODE_ENV === "production" ? "/vue-experiments/" : "/",
+
   css: {
     sourceMap: process.env.NODE_ENV !== "production"
   },
