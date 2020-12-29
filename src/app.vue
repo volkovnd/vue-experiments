@@ -4,7 +4,7 @@
       <img src="@/assets/logo.png" alt="" />
     </div>
     <div id="nav">
-      <router-link to="/">Home</router-link>
+      <router-link to="/">Главная</router-link>
     </div>
     <router-view :key="$route.fullPath" />
   </div>
