@@ -28,5 +28,15 @@ module.exports = {
       /** set devtool for vscode */
       config.devtool("source-map");
     });
+  },
+
+  pluginOptions: {
+    prerenderSpa: {
+      registry: undefined,
+      renderRoutes: ["/", "/catalog", "/about", "/contacts"],
+      useRenderEvent: false,
+      headless: true,
+      onlyProduction: true
+    }
   }
 };
