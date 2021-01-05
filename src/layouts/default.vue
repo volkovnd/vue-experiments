@@ -1,12 +1,15 @@
 <template>
   <div id="page">
     <PageHeader id="header">
-      <div class="row justify-between align-center">
+      <div class="row justify-content-between align-items-center">
         <div class="col-auto">
           <img src="@/assets/logo.png" alt="" />
         </div>
         <div class="col-auto">
-          <BasePhone>8 (495) 664-54-33</BasePhone>
+          <div class="text-right">
+            <BasePhoneLink>8 (495) 664-54-33</BasePhoneLink>
+            <div class="address">Московская обл., г. Пушкино, ул. Грибоедова 7</div>
+          </div>
         </div>
       </div>
     </PageHeader>
@@ -22,7 +25,10 @@
       <slot />
     </PageMain>
     <PageFooter id="footer">
-      <span>ООО "ПакСервис"</span>
+      <div>ООО "ПакСервис"</div>
+      <div>Адрес: 141207, Московская обл., г. Пушкино, ул. Грибоедова, д. 7</div>
+      <div><BasePhoneLink>Тел.: 8 (495) 664-54-33</BasePhoneLink></div>
+      <div>E-Mail: pakservis@list.ru</div>
     </PageFooter>
   </div>
 </template>
