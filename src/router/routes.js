@@ -6,13 +6,8 @@ const routes = [
     component: () => import(/* webpackChunkName: "home" */ "@/views/home.vue")
   },
   {
-    path: "/404",
-    name: "404",
-    component: () => import(/* webpackChunkName: "not-found" */ "@/views/404.vue")
-  },
-  {
     path: "*",
-    redirect: "404"
+    component: () => import(/* webpackChunkName: "404" */ "@/views/404.vue")
   }
 ];
 
