@@ -12,6 +12,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "bootstrap": "^4.5.3",
     "core-js": "^3.6.5",
     "vue": "^2.6.12",
