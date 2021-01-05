@@ -1,13 +1,15 @@
-const loadWebFonts = async options => {
-  const WebFont = await import("webfontloader");
-
-  WebFont.load(options);
+const defaultWebFontsConfig = {
+  google: {
+    families: ["Open Sans:300,400,600,700:cyrillic,latin"]
+  }
 };
 
-export default {
-  install(Vue, options) {
-    if (options) {
-      loadWebFonts(options);
-    }
-  }
+const loadWebFonts = async () => {
+  const WebFont = await import("webfontloader");
+
+  WebFont.load(defaultWebFontsConfig);
+};
+
+export default () => {
+  loadWebFonts();
 };
