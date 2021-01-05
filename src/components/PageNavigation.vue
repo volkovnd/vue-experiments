@@ -1,14 +1,30 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link>
-    <router-link to="/catalog">Catalog</router-link>
-    <router-link to="/about">About</router-link>
-    <router-link to="/contacts">Contacts</router-link>
+  <div id="nav" class="navbar navbar-expand-md">
+    <div class="container">
+      <div
+        class="navbar-collapse collapse"
+        :class="{
+          show: !collapsed
+        }"
+      >
+        <div class="navbar-nav">
+          <router-link class="nav-item nav-link" to="/">Home</router-link>
+          <router-link class="nav-item nav-link" to="/catalog">Catalog</router-link>
+          <router-link class="nav-item nav-link" to="/about">About</router-link>
+          <router-link class="nav-item nav-link" to="/contacts">Contacts</router-link>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "PageNavigation"
+  name: "PageNavigation",
+  data() {
+    return {
+      collapsed: false
+    };
+  }
 };
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <div id="about">
+  <div id="about" class="container">
     <h1>About!</h1>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi error eligendi ullam tempore

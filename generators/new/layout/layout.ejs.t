@@ -12,3 +12,7 @@ export default {
   name: "<%= h.changeCase.pascal(name) %>Layout"
 };
 </script>
+
+<style lang="scss">
+@import "@/design";
+</style>

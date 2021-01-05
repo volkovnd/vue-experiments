@@ -1,5 +1,5 @@
 <template>
-  <div id="catalog">
+  <div id="catalog" class="container">
     <h1>Catalog</h1>
     <p>
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto optio molestias,
