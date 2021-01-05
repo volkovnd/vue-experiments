@@ -1,17 +1,11 @@
 {
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist"],
+  "include": ["./src/**/*"],
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["./src/*"]
     },
-    "target": "es2020",
-    "lib": ["dom", "es2020"],
-    "allowSyntheticDefaultImports": true,
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "esModuleInterop": true
+    "target": "es2019"
   },
   "typeAcquisition": {
     "exclude": [
@@ -19,7 +13,8 @@
       "html-entities",
       "source-map",
       "mdast-util-from-markdown",
-      "mdast-util-to-markdown"
+      "mdast-util-to-markdown",
+      "tsconfig-paths"
     ]
   }
 }
