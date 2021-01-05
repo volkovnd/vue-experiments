@@ -3,7 +3,7 @@ import Vuex, { Store } from "vuex";
 
 Vue.use(Vuex);
 
-export function createStore() {
+export default () => {
   return new Store({
     state: () => ({}),
     mutations: {},
@@ -11,4 +11,4 @@ export function createStore() {
     getters: {},
     strict: process.env.NODE_ENV !== "production"
   });
-}
+};
