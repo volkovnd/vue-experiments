@@ -5,7 +5,20 @@
     "paths": {
       "@/*": ["./src/*"]
     },
-    "target": "es2019"
+    "target": "es2019",
+    "module": "es2015",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "strictPropertyInitialization": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "forceConsistentCasingInFileNames": true
   },
   "typeAcquisition": {
     "exclude": [
