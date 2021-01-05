@@ -1,17 +1,23 @@
 <template>
   <div id="app">
-    <div id="header">
-      <img src="@/assets/logo.png" alt="" />
-    </div>
-    <div id="nav">
-      <router-link to="/">Главная</router-link>
-    </div>
-    <router-view :key="$route.fullPath" />
+    <component :is="layoutComponent" :key="layoutComponent.name || layoutComponent.__filename">
+      <router-view :key="$route.fullPath" />
+    </component>
   </div>
 </template>
 
 <script>
 export default {
-  name: "App"
+  name: "App",
+  data() {
+    return {
+      currentLayout: null
+    };
+  },
+  computed: {
+    layoutComponent() {
+      return this.currentLayout || require("@/layouts/default.vue").default;
+    }
+  }
 };
 </script>

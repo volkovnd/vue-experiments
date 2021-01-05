@@ -1,6 +1,6 @@
 <template>
   <div id="home">
-    <h1>Главная!</h1>
+    <h1>Home!</h1>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, quis repudiandae? Cum,
       tempora! Quaerat molestiae, accusamus deserunt cum iure sit reprehenderit velit perspiciatis,

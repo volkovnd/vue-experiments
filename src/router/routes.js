@@ -3,17 +3,39 @@ const routes = [
   {
     path: "/",
     name: "home",
-    component: () => import(/* webpackChunkName: "home" */ "@/views/home.vue")
+    component: () => LazyLoadView(import(/* webpackChunkName: "home" */ "@/views/home.vue"))
   },
   {
-    path: "/404",
-    name: "404",
-    component: () => import(/* webpackChunkName: "not-found" */ "@/views/404.vue")
+    path: "/about",
+    name: "about",
+    component: () => LazyLoadView(import(/* webpackChunkName: "about" */ "@/views/about.vue"))
+  },
+  {
+    path: "/contacts",
+    name: "contacts",
+    component: () => LazyLoadView(import(/* webpackChunkName: "contacts" */ "@/views/contacts.vue"))
+  },
+  {
+    path: "/catalog",
+    name: "catalog",
+    component: () => LazyLoadView(import(/* webpackChunkName: "catalog" */ "@/views/catalog.vue"))
   },
   {
     path: "*",
-    redirect: "404"
+    component: () => import(/* webpackChunkName: "404" */ "@/views/404.vue")
   }
 ];
 
 export default routes;
+
+function LazyLoadView(componentAsyncImport) {
+  const viewComponent = () => ({
+    component: componentAsyncImport,
+    delay: 200
+  });
+
+  return Promise.resolve({
+    functional: true,
+    render: (h, { data, children }) => h(viewComponent, data, children)
+  });
+}

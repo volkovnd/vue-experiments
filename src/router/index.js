@@ -4,7 +4,7 @@ import routes from "./routes";
 
 Vue.use(VueRouter);
 
-export function createRouter() {
+export default () => {
   return new VueRouter({
     mode: "history",
     base: process.env.BASE_URL,
@@ -12,4 +12,4 @@ export function createRouter() {
     linkActiveClass: "",
     linkExactActiveClass: "active"
   });
-}
+};
