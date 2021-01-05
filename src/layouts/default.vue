@@ -1,15 +1,22 @@
 <template>
   <div id="page">
     <PageHeader id="header">
-      <img src="@/assets/logo.png" alt="" />
+      <div class="row justify-between align-center">
+        <div class="col-auto">
+          <img src="@/assets/logo.png" alt="" />
+        </div>
+        <div class="col-auto">
+          <BasePhone>8 (495) 664-54-33</BasePhone>
+        </div>
+      </div>
     </PageHeader>
     <PageNavigation id="navigation">
-      <nav class="navbar-nav">
-        <router-link class="nav-item nav-link" to="/">Home</router-link>
-        <router-link class="nav-item nav-link" to="/catalog">Catalog</router-link>
-        <router-link class="nav-item nav-link" to="/about">About</router-link>
-        <router-link class="nav-item nav-link" to="/contacts">Contacts</router-link>
-      </nav>
+      <BaseNav class="navbar-nav">
+        <BaseNavLink href="/">Home</BaseNavLink>
+        <BaseNavLink href="/catalog">Catalog</BaseNavLink>
+        <BaseNavLink href="/about">About</BaseNavLink>
+        <BaseNavLink href="/contacts">Contacts</BaseNavLink>
+      </BaseNav>
     </PageNavigation>
     <PageMain id="main">
       <slot />
