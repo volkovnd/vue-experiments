@@ -11,6 +11,16 @@ const routes = [
     component: () => LazyLoadView(import(/* webpackChunkName: "about" */ "@/views/about.vue"))
   },
   {
+    path: "/contacts",
+    name: "contacts",
+    component: () => LazyLoadView(import(/* webpackChunkName: "contacts" */ "@/views/contacts.vue"))
+  },
+  {
+    path: "/catalog",
+    name: "catalog",
+    component: () => LazyLoadView(import(/* webpackChunkName: "catalog" */ "@/views/catalog.vue"))
+  },
+  {
     path: "*",
     component: () => import(/* webpackChunkName: "404" */ "@/views/404.vue")
   }
