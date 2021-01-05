@@ -1,5 +1,5 @@
 <template>
-  <img src="@/assets/logo.png" :alt="alt" />
+  <img src="@/assets/logo.png" :alt="alt" class="logo" />
 </template>
 
 <script>
@@ -14,3 +14,12 @@ export default {
   }
 };
 </script>
+
+<style lang="scss">
+@import "@/design";
+
+.logo {
+  max-width: 100%;
+  height: auto;
+}
+</style>
