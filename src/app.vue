@@ -21,3 +21,8 @@ export default {
   }
 };
 </script>
+
+<style lang="scss">
+@import "@/design";
+@import "~bootstrap/scss/bootstrap";
+</style>
