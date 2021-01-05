@@ -3,11 +3,13 @@
 </template>
 
 <script>
+import appConfig from "@/app.config";
+
 export default {
   props: {
     alt: {
       type: String,
-      default: "App Logo"
+      default: appConfig.title
     }
   }
 };

@@ -7,6 +7,9 @@
 
 <script>
 export default {
-  name: "NotFound"
+  name: "NotFound",
+  metaInfo: {
+    title: "404 error"
+  }
 };
 </script>

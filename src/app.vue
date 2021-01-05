@@ -9,6 +9,8 @@
 </template>
 
 <script>
+import appConfig from "@/app.config";
+
 export default {
   name: "App",
   data() {
@@ -19,6 +21,15 @@ export default {
   computed: {
     layoutComponent() {
       return this.currentLayout || require("@/layouts/default.vue").default;
+    }
+  },
+  metaInfo: {
+    titleTemplate(title) {
+      title = typeof title === "function" ? title(this.$store) : title;
+      return title ? `${title} | ${appConfig.title}` : appConfig.title;
+    },
+    htmlAttrs: {
+      lang: "ru"
     }
   }
 };
