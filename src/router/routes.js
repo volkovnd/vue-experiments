@@ -3,12 +3,12 @@ const routes = [
   {
     path: "/",
     name: "home",
-    component: () => import(/* webpackChunkName: "home" */ "@/views/home.vue")
+    component: () => LazyLoadView(import(/* webpackChunkName: "home" */ "@/views/home.vue"))
   },
   {
     path: "/about",
     name: "about",
-    component: () => import(/* webpackChunkName: "about" */ "@/views/about.vue")
+    component: () => LazyLoadView(import(/* webpackChunkName: "about" */ "@/views/about.vue"))
   },
   {
     path: "*",
@@ -17,3 +17,15 @@ const routes = [
 ];
 
 export default routes;
+
+function LazyLoadView(componentAsyncImport) {
+  const viewComponent = () => ({
+    component: componentAsyncImport,
+    delay: 200
+  });
+
+  return Promise.resolve({
+    functional: true,
+    render: (h, { data, children }) => h(viewComponent, data, children)
+  });
+}
