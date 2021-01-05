@@ -3,7 +3,11 @@
     <PageHeader id="header">
       <div class="row justify-content-between align-items-center">
         <div class="col-auto">
-          <BaseLogo />
+          <router-link v-slot="{ href, navigate }" to="/">
+            <a :href="href" @click="navigate">
+              <BaseLogo />
+            </a>
+          </router-link>
         </div>
         <div class="col-auto">
           <div class="text-right">
