@@ -8,7 +8,8 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "new": "cross-env HYGEN_TMPLS=generators hygen new",
-    "deploy": "node deploy.js"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -44,5 +45,6 @@
     "vue-template-compiler": "^2.6.12"
   },
   "license": "MIT",
-  "repository": "https://github.com/volkovnd/vue-experiments.git"
+  "repository": "https://github.com/volkovnd/vue-experiments.git",
+  "homepage": "https://volkovnd.github.io/vue-experiments/"
 }
