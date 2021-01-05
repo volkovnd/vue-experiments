@@ -1,11 +1,10 @@
-export function loadModules() {
-  const requireModule = require.context(".", false, /^((?!index|\.unit\.).)*\.js$/);
-
-  return requireModule
+/** @returns {import("vuex").Module[]} */
+export function loadModules(context) {
+  return context
     .keys()
     .map(key => {
       const name = key.replace(/^\.\//, "").replace(/\.\w+$/, "", "");
-      const module = requireModule(key);
+      const module = context(key);
 
       module.namespaced = module.namespaced || true;
 
@@ -22,3 +21,7 @@ export function loadModules() {
       {}
     );
 }
+
+export default () => {
+  loadModules(require.context(".", false, /^((?!index).)*\.js$/));
+};
