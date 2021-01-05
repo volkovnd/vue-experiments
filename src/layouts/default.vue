@@ -1,17 +1,22 @@
 <template>
   <div id="page">
-    <div id="header">
-      <img src="@/assets/logo.png" alt="" />
+    <PageHeader />
+    <PageNavigation />
+    <div id="main">
+      <slot />
     </div>
-    <div id="nav">
-      <router-link to="/">Главная</router-link>
-    </div>
-    <slot />
   </div>
 </template>
 
 <script>
+import PageHeader from "@/components/PageHeader.vue";
+import PageNavigation from "@/components/PageNavigation.vue";
+
 export default {
-  name: "DefaultLayout"
+  name: "DefaultLayout",
+  components: {
+    PageHeader,
+    PageNavigation
+  }
 };
 </script>
