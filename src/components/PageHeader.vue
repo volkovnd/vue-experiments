@@ -1,5 +1,5 @@
 <template>
-  <div id="header">
+  <div id="header" class="py-3">
     <div class="container">
       <img src="@/assets/logo.png" alt="" />
     </div>

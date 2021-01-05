@@ -2,7 +2,7 @@
   <div id="page">
     <PageHeader />
     <PageNavigation />
-    <div id="main">
+    <div id="main" class="my-5">
       <slot />
     </div>
   </div>
