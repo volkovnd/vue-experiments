@@ -1,5 +1,5 @@
 <template>
-  <div id="home" class="container">
+  <div id="home">
     <h1>Home!</h1>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, quis repudiandae? Cum,

@@ -1,13 +1,7 @@
 <template>
-  <div class="py-3">
+  <div class="my-5">
     <div class="container">
       <slot />
     </div>
   </div>
 </template>
-
-<script>
-export default {
-  name: "PageHeader"
-};
-</script>
