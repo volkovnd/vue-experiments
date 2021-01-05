@@ -3,7 +3,7 @@
     <PageHeader id="header">
       <div class="row justify-content-between align-items-center">
         <div class="col-auto">
-          <img src="@/assets/logo.png" alt="" />
+          <BaseLogo />
         </div>
         <div class="col-auto">
           <div class="text-right">
@@ -28,7 +28,7 @@
       <div>ООО "ПакСервис"</div>
       <div>Адрес: 141207, Московская обл., г. Пушкино, ул. Грибоедова, д. 7</div>
       <div><BasePhoneLink>Тел.: 8 (495) 664-54-33</BasePhoneLink></div>
-      <div>E-Mail: pakservis@list.ru</div>
+      <div><BaseMailLink>E-Mail: pakservis@list.ru</BaseMailLink></div>
     </PageFooter>
   </div>
 </template>
