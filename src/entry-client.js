@@ -3,9 +3,11 @@ import App from "./app.vue";
 import createApp from "./app";
 
 import webFontsPlugin from "@/plugins/webFonts";
+import baseComponents from "@/plugins/baseComponents";
 
 Vue.config.productionTip = false;
 
+Vue.use(baseComponents);
 Vue.use(webFontsPlugin);
 
 createApp(App).$mount("#app");

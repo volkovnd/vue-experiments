@@ -1,5 +1,5 @@
 <template>
-  <div class="py-3">
+  <div class="bg-primary py-4">
     <div class="container">
       <slot />
     </div>
@@ -8,6 +8,6 @@
 
 <script>
 export default {
-  name: "PageHeader"
+  name: "PageFooter"
 };
 </script>

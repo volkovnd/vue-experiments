@@ -11,6 +11,15 @@
 
 <script>
 export default {
-  name: "Home"
+  name: "Home",
+  metaInfo: {
+    title: "Home page",
+    meta: [
+      {
+        name: "description",
+        content: `Home page example description.`
+      }
+    ]
+  }
 };
 </script>
