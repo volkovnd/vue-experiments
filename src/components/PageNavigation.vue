@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar navbar-expand-md navbar-dark bg-dark py-2">
+  <div class="navbar navbar-expand-md navbar-dark bg-primary py-2">
     <div class="container">
       <button type="button" class="navbar-toggler" @click="toggle()">
         <span class="navbar-toggler-icon"></span>
