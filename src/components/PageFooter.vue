@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-dark text-light py-3">
+  <div class="bg-primary py-4">
     <div class="container">
       <slot />
     </div>

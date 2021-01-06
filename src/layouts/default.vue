@@ -29,10 +29,10 @@
       <slot />
     </PageMain>
     <PageFooter id="footer">
-      <div>ООО "ПакСервис"</div>
-      <div>Адрес: 141207, Московская обл., г. Пушкино, ул. Грибоедова, д. 7</div>
-      <div><BasePhoneLink>Тел.: 8 (495) 664-54-33</BasePhoneLink></div>
-      <div><BaseMailLink>E-Mail: pakservis@list.ru</BaseMailLink></div>
+      <div class="text-light">ООО "ПакСервис"</div>
+      <div class="text-light">Адрес: 141207, Московская обл., г. Пушкино, ул. Грибоедова, д. 7</div>
+      <div><BasePhoneLink class="text-light">Тел.: 8 (495) 664-54-33</BasePhoneLink></div>
+      <div><BaseMailLink class="text-light">E-Mail: pakservis@list.ru</BaseMailLink></div>
     </PageFooter>
   </div>
 </template>
